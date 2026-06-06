@@ -17,3 +17,4 @@ export interface SummaryStats {
   crawled: number;
   failed: number;
 }
+ 
