@@ -92,3 +92,4 @@ export function LoginSection({ onLogin }: { onLogin: () => void }) {
     </div>
   );
 }
+ 
