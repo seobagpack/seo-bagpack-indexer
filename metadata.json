@@ -1,0 +1,6 @@
+{
+  "name": "seo-bagpack-indexer",
+  "description": "Real-time Google indexing dashboard and batch URL submitter.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
