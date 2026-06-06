@@ -5,9 +5,10 @@ interface LayoutProps {
   children: ReactNode;
   activeTab: 'submit' | 'dashboard';
   setActiveTab: (tab: 'submit' | 'dashboard') => void;
+  onLogout: () => void;
 }
 
-export function Layout({ children, activeTab, setActiveTab }: LayoutProps) {
+export function Layout({ children, activeTab, setActiveTab, onLogout }: LayoutProps) {
   return (
     <div className="min-h-screen bg-slate-50 flex">
       {/* Sidebar */}
@@ -34,10 +35,10 @@ export function Layout({ children, activeTab, setActiveTab }: LayoutProps) {
         </nav>
 
         <div className="p-4 border-t border-slate-100">
-           <a href="#" className="flex items-center px-3 py-2 text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">
+           <button onClick={onLogout} className="flex w-full items-center px-3 py-2 text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">
             <LogOut className="w-4 h-4 mr-3" />
              Exit
-           </a>
+           </button>
         </div>
       </aside>
 
